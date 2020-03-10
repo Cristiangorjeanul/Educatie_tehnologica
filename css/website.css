@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Times New Roman", Arial, sans-serif, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+  }
+  
+  nav a {
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    nav a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  nav a:hover {
+    color: blue;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .callToAction {
+    width: 100%;
+    height: 430px;
+    background-color: blue;
+  }
+  
+  .callToAction .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mainInfo {
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+  }
+  
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 5em;
+    }
+  }
+  
+  .mainInfo p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .mainInfo p {
+      font-size: 2rem;
+    }
+  }
+  
+  .mainInfo a {
+    margin-top: 40px;
+    color: black;
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .mainInfo a {
+    letter-spacing: 0;
+  }
+  
+  .mainInfo a:hover,
+  .mainInfo a:active {
+    letter-spacing: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .mainInfo a {
+      font-size: 0.7rem;
+    }
+  }
+  
+  #colorBoxes {
+    height: 400px;
+    position: relative;
+    top: -50px;
+  }
+  
+  #colorBoxes .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .box {
+    height: 100%;
+    min-width: 190px;
+    background-color: rgb(82, 239, 245);
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+    box-shadow: 10px 10px 50px -20px #888888;
+  }
+  
+  @media (max-width: 768px) {
+    #colorBoxes .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .box img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
